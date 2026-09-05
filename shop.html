@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shop | Pharmacy</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Shop CSS -->
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+     HEADER
+===================================================== -->
+
+    <header class="shop-header">
+      <div class="shop-header-inner">
+        <!-- LOGO -->
+
+        <a href="index.html" class="shop-logo">
+          <span class="shop-logo-icon">+</span>
+
+          <span>PHARMACY</span>
+        </a>
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <input type="checkbox" id="shop-menu-toggle" />
+
+        <label for="shop-menu-toggle" class="shop-menu-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- NAVIGATION -->
+
+        <nav class="shop-navigation">
+          <a href="index.html"> Home </a>
+
+          <a href="index.html#about"> About </a>
+
+          <a href="index.html#services"> Services </a>
+
+          <a href="shop.html" class="active"> Shop </a>
+
+          <a href="index.html#contact"> Contact </a>
+        </nav>
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="shop-header-actions">
+          <!-- Search -->
+
+          <button class="header-icon" aria-label="Search">
+            <span>⌕</span>
+          </button>
+
+          <!-- Cart -->
+
+          <button class="header-icon cart-icon" aria-label="Shopping cart">
+            <span>🛒</span>
+
+            <small>0</small>
+          </button>
+
+          <!-- Login -->
+
+          <a href="#" class="header-login"> Login </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================
+     SHOP HERO
+===================================================== -->
+
+    <section class="shop-hero">
+      <div class="shop-hero-overlay"></div>
+
+      <div class="shop-container shop-hero-content">
+        <div class="hero-badge">
+          <span>+</span>
+
+          PHARMACY SHOP
+        </div>
+
+        <h1>
+          Your Health,
+          <span>Our Priority.</span>
+        </h1>
+
+        <p>
+          Discover quality medicines, vitamins, personal care products and
+          healthcare essentials for you and your family.
+        </p>
+
+        <!-- BREADCRUMB -->
+
+        <div class="shop-breadcrumb">
+          <a href="index.html"> Home </a>
+
+          <span>›</span>
+
+          <strong> Shop </strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     SHOP CONTENT
+===================================================== -->
+
+    <section class="shop-section">
+      <div class="shop-container">
+        <!-- SHOP TITLE -->
+
+        <div class="shop-heading">
+          <div>
+            <span class="section-tag"> OUR PRODUCTS </span>
+
+            <h2>Shop Healthcare Products</h2>
+
+            <p>
+              Carefully selected products to support your health and wellbeing.
+            </p>
+          </div>
+
+          <!-- SORT -->
+
+          <div class="sort-area">
+            <label for="sortProducts"> Sort by </label>
+
+            <select id="sortProducts">
+              <option>Featured</option>
+
+              <option>Price: Low to High</option>
+
+              <option>Price: High to Low</option>
+
+              <option>Newest</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- =================================================
+             CATEGORIES
+        ================================================== -->
+
+        <div class="product-categories">
+          <button class="category active">All Products</button>
+
+          <button class="category">Medicines</button>
+
+          <button class="category">Vitamins</button>
+
+          <button class="category">Personal Care</button>
+
+          <button class="category">Baby Care</button>
+
+          <button class="category">Medical Devices</button>
+
+          <button class="category">First Aid</button>
+        </div>
+
+        <!-- =================================================
+             PRODUCTS
+        ================================================== -->
+
+        <div class="products-grid">
+          <!-- 1 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-status"> Popular </span>
+
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">💊</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> Medicines </span>
+
+              <h3>Paracetamol</h3>
+
+              <p>
+                Quality healthcare product for relief from mild pain and fever.
+              </p>
+
+              <div class="product-footer">
+                <strong> GH₵ 25.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-status orange"> Best Seller </span>
+
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">🍊</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> Vitamins </span>
+
+              <h3>Daily Multivitamins</h3>
+
+              <p>
+                Daily nutritional support containing essential vitamins and
+                minerals.
+              </p>
+
+              <div class="product-footer">
+                <strong> GH₵ 65.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-status blue"> New </span>
+
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">🌡️</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> Medical Devices </span>
+
+              <h3>Digital Thermometer</h3>
+
+              <p>
+                Easy and accurate temperature checking for convenient home
+                monitoring.
+              </p>
+
+              <div class="product-footer">
+                <strong> GH₵ 45.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-status purple"> Featured </span>
+
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">🧴</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> Personal Care </span>
+
+              <h3>Body Lotion</h3>
+
+              <p>Gentle moisturizing care for healthy-looking and soft skin.</p>
+
+              <div class="product-footer">
+                <strong> GH₵ 55.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-status"> Popular </span>
+
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">🩹</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> First Aid </span>
+
+              <h3>Adhesive Bandages</h3>
+
+              <p>
+                Comfortable bandages for protecting minor cuts and injuries.
+              </p>
+
+              <div class="product-footer">
+                <strong> GH₵ 30.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-status orange"> Popular </span>
+
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">🧼</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> Personal Care </span>
+
+              <h3>Antibacterial Soap</h3>
+
+              <p>
+                Gentle cleansing soap designed for everyday personal hygiene.
+              </p>
+
+              <div class="product-footer">
+                <strong> GH₵ 22.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-status blue"> New </span>
+
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">🩺</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> Medical Devices </span>
+
+              <h3>Blood Pressure Monitor</h3>
+
+              <p>
+                Convenient blood pressure monitoring device for home healthcare.
+              </p>
+
+              <div class="product-footer">
+                <strong> GH₵ 180.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-status"> Popular </span>
+
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">👶</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> Baby Care </span>
+
+              <h3>Baby Care Essentials</h3>
+
+              <p>Gentle healthcare essentials selected for babies.</p>
+
+              <div class="product-footer">
+                <strong> GH₵ 75.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">💧</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> Healthcare </span>
+
+              <h3>Oral Rehydration Salts</h3>
+
+              <p>
+                Helps replace fluids and electrolytes lost through dehydration.
+              </p>
+
+              <div class="product-footer">
+                <strong> GH₵ 18.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-status blue"> New </span>
+
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">🦷</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> Personal Care </span>
+
+              <h3>Dental Care Kit</h3>
+
+              <p>
+                Everyday oral care essentials for a clean and healthy smile.
+              </p>
+
+              <div class="product-footer">
+                <strong> GH₵ 48.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-status"> Popular </span>
+
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">🧤</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> First Aid </span>
+
+              <h3>Disposable Gloves</h3>
+
+              <p>
+                Protective disposable gloves suitable for everyday healthcare
+                needs.
+              </p>
+
+              <div class="product-footer">
+                <strong> GH₵ 35.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12 -->
+
+          <div class="product-card">
+            <div class="product-image">
+              <span class="product-status orange"> Best Seller </span>
+
+              <button class="wishlist">♡</button>
+
+              <div class="product-symbol">🧴</div>
+            </div>
+
+            <div class="product-details">
+              <span class="product-category"> Baby Care </span>
+
+              <h3>Baby Moisturizing Lotion</h3>
+
+              <p>Gentle moisturizing care designed for delicate baby skin.</p>
+
+              <div class="product-footer">
+                <strong> GH₵ 62.00 </strong>
+
+                <button class="add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGINATION -->
+
+        <div class="pagination">
+          <button class="page active">1</button>
+
+          <button class="page">2</button>
+
+          <button class="page">3</button>
+
+          <button class="page">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+    <footer class="shop-footer">
+      <div class="shop-container">
+        <div class="footer-grid">
+          <!-- LEFT -->
+
+          <div class="footer-brand">
+            <a href="index.html" class="shop-logo">
+              <span class="shop-logo-icon"> + </span>
+
+              <span> PHARMACY </span>
+            </a>
+
+            <p>
+              Your trusted partner for quality healthcare products and
+              professional pharmacy services.
+            </p>
+
+            <div class="footer-socials">
+              <a href="#">f</a>
+
+              <a href="#">𝕏</a>
+
+              <a href="#">in</a>
+
+              <a href="#">◎</a>
+            </div>
+          </div>
+
+          <!-- QUICK LINKS -->
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <a href="index.html"> Home </a>
+
+            <a href="index.html#about"> About Us </a>
+
+            <a href="index.html#services"> Services </a>
+
+            <a href="shop.html"> Shop </a>
+
+            <a href="index.html#contact"> Contact </a>
+          </div>
+
+          <!-- CATEGORIES -->
+
+          <div class="footer-column">
+            <h3>Categories</h3>
+
+            <a href="#"> Medicines </a>
+
+            <a href="#"> Vitamins </a>
+
+            <a href="#"> Personal Care </a>
+
+            <a href="#"> Baby Care </a>
+
+            <a href="#"> Medical Devices </a>
+          </div>
+
+          <!-- RIGHT -->
+
+          <div class="footer-column">
+            <h3>Customer Support</h3>
+
+            <a href="#"> FAQs </a>
+
+            <a href="#"> Delivery Information </a>
+
+            <a href="#"> Privacy Policy </a>
+
+            <a href="#"> Terms & Conditions </a>
+
+            <a href="index.html#contact"> Contact Support </a>
+          </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom">
+          <p>© 2026 Pharmacy. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
