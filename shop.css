@@ -1381,3 +1381,78 @@ select {
     width: 100%;
   }
 }
+/* ==========================================
+   CART NOTIFICATION
+========================================== */
+
+.cart-message {
+  position: fixed;
+
+  top: 95px;
+
+  right: 25px;
+
+  z-index: 9999;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 18px;
+
+  border-radius: 10px;
+
+  background: #101927;
+
+  color: white;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+
+  transform: translateX(120%);
+
+  opacity: 0;
+
+  transition: 0.3s ease;
+}
+
+.cart-message.show {
+  transform: translateX(0);
+
+  opacity: 1;
+}
+
+.cart-message span {
+  width: 22px;
+
+  height: 22px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #0b8f71;
+
+  color: white;
+
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
+  .cart-message {
+    left: 15px;
+
+    right: 15px;
+
+    top: 80px;
+
+    justify-content: center;
+  }
+}

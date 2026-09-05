@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shopping Cart | Pharmacy</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Cart CSS -->
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+     HEADER
+===================================================== -->
+
+    <header class="cart-header">
+      <div class="cart-header-inner">
+        <!-- LOGO -->
+
+        <a href="index.html" class="cart-logo">
+          <span class="cart-logo-icon">+</span>
+
+          <span>PHARMACY</span>
+        </a>
+
+        <!-- NAVIGATION -->
+
+        <nav class="cart-navigation">
+          <a href="index.html"> Home </a>
+
+          <a href="index.html#about"> About </a>
+
+          <a href="index.html#services"> Services </a>
+
+          <a href="shop.html"> Shop </a>
+
+          <a href="index.html#contact"> Contact </a>
+        </nav>
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="cart-header-actions">
+          <a href="shop.html" class="continue-shopping"> Continue Shopping </a>
+
+          <div class="cart-header-icon">
+            🛒
+
+            <span id="headerCartCount"> 0 </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================
+     CART HERO
+===================================================== -->
+
+    <section class="cart-hero">
+      <div class="cart-container">
+        <div class="cart-breadcrumb">
+          <a href="index.html"> Home </a>
+
+          <span>›</span>
+
+          <a href="shop.html"> Shop </a>
+
+          <span>›</span>
+
+          <strong> Shopping Cart </strong>
+        </div>
+
+        <span class="cart-hero-tag"> YOUR SHOPPING BAG </span>
+
+        <h1>Shopping Cart</h1>
+
+        <p>
+          Review your selected healthcare products before proceeding to
+          checkout.
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     CART SECTION
+===================================================== -->
+
+    <main class="cart-section">
+      <div class="cart-container">
+        <!-- =================================================
+             EMPTY CART
+        ================================================== -->
+
+        <div class="empty-cart" id="emptyCart">
+          <div class="empty-cart-icon">🛒</div>
+
+          <h2>Your cart is empty</h2>
+
+          <p>You haven't added any products to your shopping cart yet.</p>
+
+          <a href="shop.html" class="shop-now-button"> Browse Products </a>
+        </div>
+
+        <!-- =================================================
+             CART CONTENT
+        ================================================== -->
+
+        <div class="cart-layout" id="cartContent">
+          <!-- =================================================
+                 CART ITEMS
+            ================================================== -->
+
+          <section class="cart-items-section">
+            <div class="cart-section-heading">
+              <div>
+                <span> YOUR ITEMS </span>
+
+                <h2>Selected Products</h2>
+              </div>
+
+              <strong id="itemCount"> 0 Items </strong>
+            </div>
+
+            <!-- PRODUCTS WILL BE INSERTED HERE -->
+
+            <div class="cart-items" id="cartItems"></div>
+
+            <!-- CONTINUE SHOPPING -->
+
+            <a href="shop.html" class="back-to-shop"> ← Continue Shopping </a>
+          </section>
+
+          <!-- =================================================
+                 ORDER SUMMARY
+            ================================================== -->
+
+          <aside class="order-summary">
+            <div class="summary-header">
+              <span> ORDER SUMMARY </span>
+
+              <h2>Your Order</h2>
+            </div>
+
+            <div class="summary-row">
+              <span> Subtotal </span>
+
+              <strong id="subtotal"> GH₵ 0.00 </strong>
+            </div>
+
+            <div class="summary-row">
+              <span> Delivery </span>
+
+              <strong id="delivery"> GH₵ 15.00 </strong>
+            </div>
+
+            <div class="summary-divider"></div>
+
+            <div class="summary-total">
+              <span> Total </span>
+
+              <strong id="total"> GH₵ 0.00 </strong>
+            </div>
+
+            <!-- DELIVERY NOTE -->
+
+            <div class="delivery-note">
+              <span> 🚚 </span>
+
+              <div>
+                <strong> Fast Delivery </strong>
+
+                <p>Get your order delivered to your location.</p>
+              </div>
+            </div>
+
+            <!-- CHECKOUT -->
+
+            <button class="checkout-button" id="checkoutButton">
+              Proceed to Checkout
+
+              <span> → </span>
+            </button>
+
+            <p class="secure-checkout">🔒 Secure and protected checkout</p>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+    <footer class="cart-footer">
+      <div class="cart-container">
+        <div class="cart-footer-grid">
+          <!-- BRAND -->
+
+          <div class="cart-footer-brand">
+            <a href="index.html" class="cart-logo">
+              <span class="cart-logo-icon"> + </span>
+
+              <span> PHARMACY </span>
+            </a>
+
+            <p>
+              Your trusted partner for quality healthcare products and
+              professional pharmacy services.
+            </p>
+          </div>
+
+          <!-- QUICK LINKS -->
+
+          <div class="cart-footer-column">
+            <h3>Quick Links</h3>
+
+            <a href="index.html"> Home </a>
+
+            <a href="index.html#about"> About Us </a>
+
+            <a href="index.html#services"> Services </a>
+
+            <a href="shop.html"> Shop </a>
+
+            <a href="index.html#contact"> Contact </a>
+          </div>
+
+          <!-- CATEGORIES -->
+
+          <div class="cart-footer-column">
+            <h3>Categories</h3>
+
+            <a href="shop.html"> Medicines </a>
+
+            <a href="shop.html"> Vitamins </a>
+
+            <a href="shop.html"> Personal Care </a>
+
+            <a href="shop.html"> Baby Care </a>
+
+            <a href="shop.html"> Medical Devices </a>
+          </div>
+
+          <!-- CUSTOMER SUPPORT -->
+
+          <div class="cart-footer-column">
+            <h3>Customer Support</h3>
+
+            <a href="#"> FAQs </a>
+
+            <a href="#"> Delivery Information </a>
+
+            <a href="#"> Privacy Policy </a>
+
+            <a href="#"> Terms & Conditions </a>
+
+            <a href="index.html#contact"> Contact Support </a>
+          </div>
+        </div>
+
+        <div class="cart-footer-bottom">
+          <p>© 2026 Pharmacy. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+    <script src="cart.js"></script>
+  </body>
+</html>
