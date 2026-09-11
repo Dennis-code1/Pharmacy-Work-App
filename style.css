@@ -191,7 +191,7 @@ a {
 
 .hero-buttons {
   display: flex;
-  gap: 15px;
+  gap: 10px;
   margin-bottom: 45px;
 }
 
@@ -606,7 +606,7 @@ a {
 
 .product-image {
   height: 220px;
-  background: #edf7f4;
+  background: #2e3e3a;
 
   position: relative;
 

@@ -10,7 +10,7 @@ let cart = JSON.parse(localStorage.getItem("pharmacyCart")) || [];
 
 const products = [
   {
-    name: "Paracetamol",
+    name: "Auntie Mary's Gripe Mixture",
     price: 25,
     category: "Medicines",
   },
